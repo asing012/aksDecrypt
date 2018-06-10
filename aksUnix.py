@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Akshay Singh
-# Decyrpts DES hash(should include SALT) using dictionary attack
+# Decyrpts Unix Password using dictionary attack
 
 import crypt
 
@@ -18,7 +18,7 @@ def testPass(encryptText): # to decrypt pass
 
 def main():
     passFile = open('encryptPass.txt') 
-    print("\nWelcome to aksDecrypt \n")
+    print("\nWelcome to aksUnix \n")
     for password in passFile.readlines():
         if ":" in password: #if the txt file has user:password
             user = password.split(':')[0]
